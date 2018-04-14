@@ -1,0 +1,19 @@
+<!--pages/identity/identity.wxml-->
+<view class='page'>
+  <view class='page_item' bindtap='realnameChange'>
+    <text>姓名</text>
+    <text style='right:20rpx;font-size:14px;color:#c4c4c4;'>{{realname}}</text>
+  </view>
+  <view class='page_item'>
+    <text>证件类型</text>
+    <text style='right:20rpx;font-size:14px;color:#c4c4c4;'>身份证</text>
+  </view>
+  <view class='page_item' bindtap='idCardNumChange'>
+    <text>证件号码</text>
+    <text style='right:20rpx;font-size:14px;color:#c4c4c4;'>{{idcardnum}}</text>
+  </view>
+</view>
+
+<modal hidden="{{outHide}}" title="{{outTitle}}" confirm-text="提交" cancel-text="取消" bindcancel="outCancel" bindconfirm="outConfirm">
+  <input type='text' value='{{outDefault}}' placeholder="请输入内容" auto-focus='true' bindinput='inputListener' />
+</modal>

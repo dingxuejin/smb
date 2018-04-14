@@ -1,0 +1,88 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/welcome/welcome",
+    
+    "pages/login/login",
+    "pages/audioInfo/audioInfo",
+    "pages/videoInfo/videoInfo",
+    "pages/video/video",
+    "pages/audio/audio",
+    "pages/myAudio/myAudio",
+    "pages/myVideo/myVideo",
+    "pages/idCardPicture/idCardPicture",
+    "pages/identify/identify",
+    "pages/release/release",
+    "pages/packet/packet",
+    "pages/histroy/histroy",
+    "pages/identity/identity",
+    "pages/myRelease/myRelease",
+    "pages/personal/personal",
+    "pages/personInfo/personInfo",
+    "pages/type/type",
+    "pages/feedback/feedback",
+    "pages/login2/login2",
+    "pages/logs/logs",
+    "pages/inAndOffMoneyList/inAndOffMoneyList",
+    "pages/getMoneyList/getMoneyList",
+    "pages/addMoneyList/addMoneyList",
+    "pages/mypay/mypay",
+    "pages/payvideo/payvideo",
+    "pages/payaudio/payaudio",
+    "pages/fabu/fabu",
+    "pages/shop/shop",
+    "pages/adda/adda",
+    "pages/addt/addt",
+    "pages/addv/addv"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "上麦吧",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#646464",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "视频",
+        "iconPath": "image/tt1.png",
+        "selectedIconPath": "image/tt1.png"
+      },
+      {
+        "pagePath": "pages/audio/audio",
+        "text": "音频",
+        "iconPath": "image/tt2.png",
+        "selectedIconPath": "image/tt2.png"
+      },
+      {
+        "pagePath": "pages/fabu/fabu",
+        "text": "发布",
+        "iconPath": "image/ffbb.png",
+        "selectedIconPath": "image/ffbb.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "image/sscc.png",
+        "selectedIconPath": "image/sscc.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "image/tt4.png",
+        "selectedIconPath": "image/tt4.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

@@ -1,0 +1,15 @@
+<!--pages/idCardPicture/idCardPicture.wxml-->
+<view class='page'>
+  <view class='item'>
+    <text>身份证正面照：</text>
+    <image src='{{frontImg}}' bindtap='frontChange'></image>
+  </view>
+  <view class='item'>
+    <text>身份证反面照：</text>
+    <image src='{{nagetiveImg}}' bindtap='nagetiveChange'></image>
+  </view>
+  <view class='item'>
+    <text>手持证件照：</text>
+    <image src='{{handImg}}' bindtap='handChange'></image>
+  </view>
+</view>

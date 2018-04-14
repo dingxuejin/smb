@@ -1,0 +1,40 @@
+/**welcome.wxss**/
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+}
+
+/* .logo {
+  height: 200rpx;
+  width: 200rpx;
+  display: flex;
+  position: fixed;
+  top: 150rpx;
+} */
+
+.title {
+  position: fixed;
+  font-size: 36px;
+  color: #646464;
+  top: 80px;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+}
+
+.msg {
+  display: flex;
+  position: fixed;
+  color: #646464;
+  bottom: 100rpx;
+  font-size: 16px;
+  line-height: 60rpx;
+}

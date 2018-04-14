@@ -1,0 +1,8 @@
+<!--pages/histroy/histroy.wxml-->
+<scroll-view class='page' scroll-y style='height:{{pageHeight}}' bindscrolltolower='changePage'>
+  <view class='page_item' wx:for='{{historyList}}' data-id='{{item}}' bindtap='goTo'>
+    <image class='item_img' src='{{item.historyUrl}}'></image>
+    <text class='item_title' style='margin-top:55rpx;'>{{item.releasename}}</text>
+    <text class='item_content' style='display:none;'>已看到<text>76</text>%</text>
+  </view>
+</scroll-view>

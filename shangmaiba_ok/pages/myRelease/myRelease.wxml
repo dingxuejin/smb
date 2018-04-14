@@ -1,0 +1,15 @@
+<!--pages/myRelease/myRelease.wxml-->
+<view class='page'>
+  <view class='body_item' bindtap='goTo' id='release'>
+    <text>发布</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+  <view class='body_item' bindtap='goTo' id='myAudio'>
+    <text>我的音频</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+  <view class='body_item' bindtap='goTo' id='myVideo'>
+    <text>我的视频</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+</view>

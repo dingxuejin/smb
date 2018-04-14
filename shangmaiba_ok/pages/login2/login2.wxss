@@ -1,0 +1,52 @@
+/* pages/login2/login2.wxss */
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+}
+
+.page_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.person_head_bg {
+  display: none;
+  position: fixed;
+  width: 300rpx;
+  border-radius: 100%;
+  height: 300rpx;
+  padding: 5px;
+  top: 100rpx;
+  border: 3px solid #646464;
+}
+
+.person_head {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: #c4c4c4;
+}
+
+.page_input {
+  position: fixed;
+  width: 700rpx;
+  height: 100rpx;
+  color: #646464;
+  font-size: 14px;
+  line-height: 100rpx;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.page_btn {
+  position: fixed;
+  width: 700rpx;
+  color: #646464;
+  height: 100rpx;
+  bottom: 280rpx;
+  line-height: 100rpx;
+}

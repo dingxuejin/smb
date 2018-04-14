@@ -1,0 +1,5 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='page'>
+  <textarea class='page_textarea' placeholder='请输入反馈内容哦(*￣︶￣)y' bindinput='inputChange'></textarea>
+  <button class='page_btn' bindtap='commit'>提交</button>
+</view>

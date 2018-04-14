@@ -1,0 +1,86 @@
+/* pages/myRelease/myRelease.wxss */
+
+.page {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #c4c4c4;
+}
+
+.page_item {
+  width: calc(100% - 40rpx);
+  height: 140rpx;
+  padding: 0 20rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.head {
+  margin-top: 20rpx;
+  width: 100rpx;
+  position: absolute;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+
+.name {
+  color: #646464;
+  position: absolute;
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  left: 140rpx;
+  margin-top: 20rpx;
+  font-size: 15px;
+}
+
+.time {
+  color: #c4c4c4;
+  position: absolute;
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 80rpx;
+  left: 140rpx;
+  font-size: 13px;
+}
+
+.state {
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 50rpx;
+  color: #c4c4c4;
+  position: absolute;
+  right: 20rpx;
+  font-size: 14px;
+}
+
+.not_pass {
+  width: 40rpx;
+  height: 40rpx;
+  right: 140rpx;
+  margin-top: 50rpx;
+  position: absolute;
+}
+
+.body_item {
+  width: calc(100% - 40rpx);
+  height: 120rpx;
+  padding: 0 20rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.body_item text {
+  width: 100%;
+  height: 120rpx;
+  color: #646464;
+  font-size: 16px;
+  line-height: 120rpx;
+}
+
+.body_item image {
+  width: 20rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 20rpx;
+  margin-top: 40rpx;
+}

@@ -1,0 +1,23 @@
+<!--pages/identify/identify.wxml-->
+<view class='page'>
+  <image class='head' src='{{userInfo.imgUrl}}'></image>
+  <view class='body'>
+    <view class='page_item' bindtap='goTo' id='identity'>
+      <text class='page_item_title'>基本信息：</text>
+      <text class='page_item_content'>{{isAll[isAll1Index]}}</text>
+      <image src='../../image/ic_arrow_right.png'></image>
+    </view>
+    <view class='page_item' style='top:420rpx;' bindtap='goTo' id='idCardPicture'>
+      <text class='page_item_title'>证件照片：</text>
+      <text class='page_item_content'>{{isAll[isAll2Index]}}</text>
+      <image src='../../image/ic_arrow_right.png'></image>
+    </view>
+    <view class='page_item' style='top:540rpx;border-bottom: 1px solid #c4c4c4;' bindtap='goTo' id='idCardPicture'>
+      <text class='page_item_title'>实名状态：</text>
+      <text class='page_item_content' style='color:red;right:40rpx;'>{{identifyList[isIdentify]}}</text>
+      <image src='../../image/ic_arrow_right.png' style='display:none;'></image>
+    </view>
+    <button class='upload_confirm' bindtap='doCommit'>上传审核</button>
+  </view>
+  <text class='page_bottom'>上麦吧保障您的信息安全</text>
+</view>

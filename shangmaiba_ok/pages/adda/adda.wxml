@@ -1,0 +1,2 @@
+<!--pages/adda/adda.wxml-->
+<web-view src="https://www.aonifei.cn/shangmaiba/smb_admin/aadd111.html?openid={{openid}}&a_price={{a_price}}"></web-view>

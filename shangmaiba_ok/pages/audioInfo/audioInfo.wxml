@@ -1,0 +1,93 @@
+<!--pages/videoInfo/videoInfo.wxml-->
+
+ <!-- <audio class='aaa'  src='{{picsrc}}{{body.link}}' controls='true' poster="{{picsrc}}{{body.title_pic}}" name="{{body.title}}" author="{{body.nickname}}" bindplay='bindplay'  id="myAudio"></audio> -->
+
+<video  src='{{body.link}}' poster='{{body.title_pic}}' id='myVideo' bindplay='bindplay' id="myVideo"></video>
+
+<scroll-view class='page' scroll-y style='height:{{pageHeight}};' bindscrolltolower='changePage'>
+ 
+  <view class='body'>
+    <view class='page_item'>
+      <!-- <text class='page_item_title'>{{body.title}}</text>
+      <text class='page_item_author'>作者：<text>{{body.nickname}}</text></text> -->
+      <text class='page_item_date'>{{body.add_time}}</text>
+      <image class='page_item_view_img' src='../../image/er.png'></image>
+      <image class='page_item_time_img' src='../../image/ic_time.png'></image>
+      <image class='page_item_price_img' src='../../image/ic_price.png'></image>
+      <text class='page_item_view'>{{body.click}}</text>
+      <text class='page_item_time'>{{body.shichang}}</text>
+      <text class='page_item_price'>{{body.p_price}}元({{buytext}})</text>
+    </view>
+    <text class='body_title'>基本介绍</text>
+    <text class='body_content'>{{body.content}}</text>
+  </view>
+  <view class='comment'>
+    <view class='comment_title'>
+      <hr style=' left: 80rpx;' />
+      <text>评论列表</text>
+      <text style='font-size:12px;'>User comments</text>
+      <hr style='right:80rpx;margin-top:0;' />
+    </view>
+    <view class='comment_list'>
+      <view class='comment_item' wx:for='{{commentList}}' data-id='{{item}}'>
+        <view class='comment_item_head '>
+          <image src='{{item.head_img}}'></image>
+        </view>
+        <!-- <view class='comment_item_body_delete ' hidden='{{item.candelete}}' data-id='{{item.id}}' bindtap='doCommentDelete'>
+          <text>删除</text>
+        </view> -->
+        <!-- <view class='comment_item_body_like ' bindtap='likeChange' id='{{index}}' data-id='{{item.id}}' data-islike='{{item.isLike}}'>
+          <image src='{{isLikeList[item.isLike]}} '></image>
+          <text>{{item.likeNum}}</text>
+        </view> -->
+        <!-- <view class='comment_item_body_comment ' bindtap='powerDrawer' data-statu="open" data-type='reply' data-index='{{index}}' data-id='{{item.id}}' data-username='{{item.username}}' data-userid='{{item.userid}}'>
+          <image src='../../image/ic_comment.png '></image>
+          <text>回复</text>
+        </view> -->
+        <view class='comment_item_body '>
+          <view class='comment_item_body_name '>
+            <text>{{item.nickname}}</text>
+          </view>
+          <view class='comment_item_body_time '>
+            <text>{{item.add_time}}</text>
+          </view>
+          <view class='comment_item_body_content '>
+            <text>{{item.content}}</text>
+          </view>
+          <view class='comment_item_body_list '>
+            <view class='comment_item_body_list_item ' wx:for='{{item.replyList}}' data-id='{{item}}'>
+              <view class='comment_item_body_list_item_title '>
+                <image src='{{item.replyhead}}'></image>
+                <text>{{item.replyname}}</text>
+                <text style='color:#c4c4c4;margin:0 20rpx; '>回复</text>
+                <text>{{item.repliedname}}</text>
+              </view>
+              <view class='comment_item_body_list_item_content '>
+                <text>{{item.content}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<view class='docomment '>
+  <button class='docomment_btn ' bindtap='powerDrawer' data-statu="open" id='commentShow'>评论</button>
+</view>
+
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+  <!--drawer content-->
+  <view class="drawer_title">{{contentTitle}}</view>
+  <view class="drawer_content">
+    <view class="top grid">
+      <textarea class="textarea_base" name="applyMoney" bindinput='inputChange' id='applyMoney' placeholder='请输入评论内容 '></textarea>
+    </view>
+  </view>
+  <view class="btn_ok" bindtap="powerDrawer" data-statu="close" id='commit'>提交</view>
+</view>

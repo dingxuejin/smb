@@ -1,0 +1,8 @@
+<!--pages/addMoneyList/addMoneyList.wxml-->
+<scroll-view class='page' scroll-y bindscrolltolower='bindscrolltolower'>
+  <view class='item' wx:for='{{rechargeList}}' data-id='{{item}}'>
+    <text class='money'>￥{{item.p_price}}</text>
+    <text class='type'>充值</text>
+    <text class='time'>{{item.add_time}}</text>
+  </view>
+</scroll-view>

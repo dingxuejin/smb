@@ -1,0 +1,38 @@
+<!--pages/type/type.wxml-->
+<view class='page'>
+  <view class='body'>
+    <view class='body_left'>
+      <text class='body_left_item choose'>男频</text>
+      <text class='body_left_item'>女频</text>
+      <text class='body_left_item'>出版</text>
+      <text class='body_left_item'>签约</text>
+      <text class='body_left_item'>视频</text>
+    </view>
+    <view class='body_right'>
+      <view class='body_right_item'>
+        <image src='img/ic_book.png'></image>
+        <text>玄幻言情</text>
+      </view>
+       <view class='body_right_item'>
+        <image src='img/ic_book.png'></image>
+        <text>仙侠言情</text>
+      </view>
+       <view class='body_right_item'>
+        <image src='img/ic_book.png'></image>
+        <text>古代言情</text>
+      </view>
+       <view class='body_right_item'>
+        <image src='img/ic_book.png'></image>
+        <text>穿越时刻</text>
+      </view>
+       <view class='body_right_item'>
+        <image src='img/ic_book.png'></image>
+        <text>惊悚恐怖</text>
+      </view>
+       <view class='body_right_item'>
+        <image src='img/ic_book.png'></image>
+        <text>名著专区</text>
+      </view>
+    </view>
+  </view>
+</view>

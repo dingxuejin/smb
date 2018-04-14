@@ -1,0 +1,529 @@
+/* pages/videoInfo/videoInfo.wxss */
+
+video {
+  width: 100%;
+  height: 180px;
+}
+
+.page_out {
+  width: 100%;
+  height: 100%;
+  /* display: block;
+  overflow: hidden; */
+}
+
+/* .page_in {
+  width: 100%;
+  height: 90%;
+} */
+
+.page {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.body {
+  width: 100%;
+  position: relative;
+}
+
+.body_title {
+  display: inline-block;
+  height: 40rpx;
+  width: calc(100% - 80rpx);
+  line-height: 40rpx;
+  color: #646464;
+  font-size: 15px;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 20rpx 40rpx;
+}
+
+.page_item {
+  width: calc(100% - 40rpx);
+  padding: 20rpx;
+}
+
+.page_item_cover {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.page_item_title {
+  height: 40rpx;
+  line-height: 40rpx;
+  position: absolute;
+  display: inline-block;
+  color: #646464;
+  font-size: 15px;
+}
+
+.page_item_author {
+  height: 40rpx;
+  line-height: 40rpx;
+  position: absolute;
+  display: inline-block;
+  margin-top: 40rpx;
+  color: #c4c4c4;
+  font-size: 13px;
+}
+
+.page_item_date {
+  height: 40rpx;
+  line-height: 40rpx;
+  position: absolute;
+  display: inline-block;
+  color: #c4c4c4;
+  font-size: 14px;
+  left: 20rpx;
+  margin-top: 160rpx;
+}
+
+.page_item_view_img {
+  width: 40rpx;
+  height: 30rpx;
+  position: absolute;
+  padding: 5rpx 0;
+  margin-top: 100rpx;
+}
+
+.page_item_time_img {
+  width: 30rpx;
+  height: 30rpx;
+  padding: 5rpx;
+  position: absolute;
+  margin-left: 200rpx;
+  margin-top: 100rpx;
+}
+
+.page_item_price_img {
+  width: 30rpx;
+  height: 30rpx;
+  padding: 5rpx;
+  position: absolute;
+  margin-left: 400rpx;
+  margin-top: 100rpx;
+}
+
+.page_item_view {
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #c4c4c4;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 60rpx;
+  position: absolute;
+  margin-top: 100rpx;
+}
+
+.page_item_time {
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #c4c4c4;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 250rpx;
+  position: absolute;
+  margin-top: 100rpx;
+}
+
+.page_item_price {
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #c4c4c4;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 440rpx;
+  position: absolute;
+  margin-top: 100rpx;
+}
+
+.page_item_content {
+  height: 40rpx;
+  width: calc(100% - 40rpx);
+  line-height: 40rpx;
+  color: #c4c4c4;
+  font-size: 14px;
+  min-height: 300rpx;
+  border-radius: 3px;
+  display: inline-block;
+  background: #efefef;
+  padding: 20rpx;
+  margin-top: 220rpx;
+}
+
+.comment {
+  width: 100%;
+  position: relative;
+}
+
+.comment_title {
+  width: 100%;
+  margin: 40rpx 0;
+  height: 100rpx;
+}
+
+.comment_title text {
+  width: 100%;
+  height: 40rpx;
+  font-size: 15px;
+  color: #646464;
+  display: inline-block;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+.comment_title hr {
+  width: 150rpx;
+  height: 1px;
+  background: #c4c4c4;
+  margin-top: 50rpx;
+  position: absolute;
+}
+
+.comment_list {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.comment_item {
+  width: calc(100% - 40rpx);
+  padding: 20rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.comment_item_head {
+  width: 100rpx;
+  position: absolute;
+}
+
+.comment_item_head image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+
+.comment_item_body {
+  width: calc(100% - 120rpx);
+  margin-left: 120rpx;
+}
+
+.comment_item_body_name {
+  width: calc(100% - 300rpx);
+  height: 50rpx;
+  display: inline-block;
+  line-height: 50rpx;
+  font-size: 15px;
+  color: #646464;
+}
+
+.comment_item_body_time {
+  width: 100%;
+  height: 40rpx;
+  display: inline-block;
+  line-height: 40rpx;
+  font-size: 12px;
+  color: #646464;
+}
+
+.comment_item_body_content {
+  width: 100%;
+  height: 40rpx;
+  display: inline-block;
+  line-height: 40rpx;
+  font-size: 14px;
+}
+
+.comment_item_body_delete {
+  height: 50rpx;
+  width: 100rpx;
+  line-height: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  margin-top: 100rpx;
+  display: inline-block;
+}
+
+.comment_item_body_delete text {
+  height: 50rpx;
+  width: 100rpx;
+  line-height: 50rpx;
+  font-size: 12px;
+  text-align: center;
+  color: #646464;
+  display: inline-block;
+}
+
+.comment_item_body_like {
+  width: 150rpx;
+  height: 50rpx;
+  display: inline-block;
+}
+
+.comment_item_body_like text {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 14px;
+  float: right;
+  color: #646464;
+}
+
+.comment_item_body_like image {
+  height: 35rpx;
+  width: 35rpx;
+  float: right;
+  margin-left: 10rpx;
+  padding: 5rpx;
+}
+
+.comment_item_body_like {
+  width: 150rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 170rpx;
+  display: inline-block;
+}
+
+.comment_item_body_like text {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 12px;
+  float: right;
+  color: #646464;
+}
+
+.comment_item_body_like image {
+  height: 35rpx;
+  width: 35rpx;
+  float: right;
+  margin-left: 10rpx;
+  padding: 5rpx;
+}
+
+.comment_item_body_comment {
+  width: 150rpx;
+  height: 50rpx;
+  right: 20rpx;
+  position: absolute;
+  display: inline-block;
+}
+
+.comment_item_body_comment text {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 12px;
+  float: right;
+  color: #646464;
+}
+
+.comment_item_body_comment image {
+  height: 35rpx;
+  width: 35rpx;
+  float: right;
+  margin-left: 10rpx;
+  padding: 5rpx;
+}
+
+.comment_item_body_list {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.comment_item_body_list_item {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.comment_item_body_list_item_title {
+  height: 50rpx;
+  width: 100%;
+}
+
+.comment_item_body_list_item_title image {
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+
+.comment_item_body_list_item_title text {
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+  max-width: 200rpx;
+  color: #646464;
+  font-size: 14px;
+}
+
+.comment_item_body_list_item_content {
+  width: 100%;
+}
+
+.comment_item_body_list_item_content  text {
+  line-height: 40rpx;
+  display: inline-block;
+  margin-top: 10rpx;
+  font-size: 14px;
+}
+
+.docomment {
+  width: calc(100% - 20px);
+  height: 40px;
+  padding: 10px;
+  background: #efefef;
+}
+
+.docomment_btn {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  font-size: 16px;
+  color: #c4c4c4;
+  text-align: center;
+}
+
+/*mask*/
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+/*content*/
+
+.drawer_box {
+  width: 650rpx;
+  overflow: hidden;
+  position: fixed;
+  height: 215px;
+  top: 200px;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin: 0 50rpx 0 50rpx;
+  border-radius: 3px;
+}
+
+.drawer_title {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.drawer_content {
+  height: 110px;
+  /* overflow-y: scroll; //超出父盒子高度可滚动   */
+}
+
+.btn_ok {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-top: 1px solid #e8e8ea;
+  color: #3cc51f;
+}
+
+.top {
+  padding-top: 8px;
+}
+
+.bottom {
+  padding-bottom: 8px;
+}
+
+.title {
+  height: 30px;
+  line-height: 30px;
+  width: 160rpx;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.input_base {
+  border: 2rpx solid #ccc;
+  padding-left: 10rpx;
+  margin-right: 50rpx;
+}
+
+.input_h30 {
+  height: 30px;
+  line-height: 30px;
+}
+
+.input_h60 {
+  height: 60px;
+}
+
+.input_view {
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+  line-height: 30px;
+}
+
+input {
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+}
+
+.textarea_base {
+  width: calc(100% - 62rpx);
+  height: 80px;
+  margin-left: 16rpx;
+  background: white;
+  padding: 10rpx;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1rpx solid #c4c4c4;
+}
+
+radio {
+  margin-right: 20px;
+}
+
+.grid {
+  display: -webkit-box;
+  display: box;
+}
+
+.col-0 {
+  -webkit-box-flex: 0;
+  box-flex: 0;
+}
+
+.col-1 {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+.page_btn {
+  bottom: 0;
+  
+  width: 90%;
+  background: red;
+  height: 100rpx;
+  border-radius: 10;
+  color: white;
+  line-height: 100rpx;
+}

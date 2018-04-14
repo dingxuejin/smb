@@ -1,0 +1,8 @@
+<!--pages/addMoneyList/inAndOffMoneyList.wxml-->
+<scroll-view class='page' scroll-y bindscrolltolower='bindscrolltolower'>
+  <view class='item' wx:for='{{paymentsList}}' data-id='{{item}}'>
+    <text class='money'>{{item.class}}{{item.rent}}元</text>
+    <text class='time'>{{item.add_time}}</text>
+    <text class='type' style='color:{{colorList[item.type]}};'>{{item.content}}</text>
+  </view>
+</scroll-view>

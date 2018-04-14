@@ -1,0 +1,10 @@
+<!--pages/login2/login2.wxml-->
+<view class='page'>
+  <image class='page_bg' src='../../image/bg_login2.png'></image>
+  <view class='person_head_bg'>
+    <image class='person_head'></image>
+  </view>
+  <input class='page_input' type='text' placeholder='手机号' id='phone' style='bottom:500rpx;' bindinput='inputListener'></input>
+  <input class='page_input' type='password' placeholder='密码' id='password' style='bottom:400rpx;' bindinput='inputListener'></input>
+  <button class='page_btn' bindtap='doLogin'>登陆</button>
+</view>

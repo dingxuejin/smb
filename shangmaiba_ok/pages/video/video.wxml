@@ -1,0 +1,51 @@
+<!--pages/video/video.wxml-->
+<view class='page'>
+  <view class='page_item'>
+    <image class='page_item_cover' src='img/ic_cover.png'></image>
+    <text class='page_item_title'>极乐净土：白丝巫女初音</text>
+    <text class='page_item_author'>叮当均</text>
+    <text class='page_item_date'>2017-12-18</text>
+    <image class='page_item_view_img' src='img/ic_view.png'></image>
+    <image class='page_item_time_img' src='img/ic_time.png'></image>
+    <image class='page_item_price_img' src='img/ic_price.png'></image>
+    <text class='page_item_view'>1234</text>
+    <text class='page_item_time'>12:34</text>
+    <text class='page_item_price'>12</text>
+  </view>
+  <view class='page_item'>
+    <image class='page_item_cover' src='img/ic_cover.png'></image>
+    <text class='page_item_title'>极乐净土：白丝巫女初音</text>
+    <text class='page_item_author'>叮当均</text>
+    <text class='page_item_date'>2017-12-18</text>
+    <image class='page_item_view_img' src='img/ic_view.png'></image>
+    <image class='page_item_time_img' src='img/ic_time.png'></image>
+    <image class='page_item_price_img' src='img/ic_price.png'></image>
+    <text class='page_item_view'>1234</text>
+    <text class='page_item_time'>12:34</text>
+    <text class='page_item_price'>12</text>
+  </view>
+  <view class='page_item'>
+    <image class='page_item_cover' src='img/ic_cover.png'></image>
+    <text class='page_item_title'>极乐净土：白丝巫女初音</text>
+    <text class='page_item_author'>叮当均</text>
+    <text class='page_item_date'>2017-12-18</text>
+    <image class='page_item_view_img' src='img/ic_view.png'></image>
+    <image class='page_item_time_img' src='img/ic_time.png'></image>
+    <image class='page_item_price_img' src='img/ic_price.png'></image>
+    <text class='page_item_view'>1234</text>
+    <text class='page_item_time'>12:34</text>
+    <text class='page_item_price'>12</text>
+  </view>
+  <view class='page_item'>
+    <image class='page_item_cover' src='img/ic_cover.png'></image>
+    <text class='page_item_title'>极乐净土：白丝巫女初音</text>
+    <text class='page_item_author'>叮当均</text>
+    <text class='page_item_date'>2017-12-18</text>
+    <image class='page_item_view_img' src='img/ic_view.png'></image>
+    <image class='page_item_time_img' src='img/ic_time.png'></image>
+    <image class='page_item_price_img' src='img/ic_price.png'></image>
+    <text class='page_item_view'>1234</text>
+    <text class='page_item_time'>12:34</text>
+    <text class='page_item_price'>12</text>
+  </view>
+</view>

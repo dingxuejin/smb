@@ -1,0 +1,12 @@
+
+
+<navigator url='../videoInfo/videoInfo?id={{item.id}}' class="content" wx:for="{{list}}">
+  <view class="content_pic"><image class="content_pic_cover" src='{{item.title_pic}}'></image><image class="bb" src='../../image/bb.png'></image></view>
+  <view class="content_title">
+    <view class="content_title_left">{{item.title}}</view>
+    <view class="content_title_right"><image width="20" height="20" src='../../image/hf.png'></image>{{item.pinglun}}<image width="20" height="20" src='../../image/sc.png'></image>{{item.collection}}</view>
+  </view>
+  <view class="content_title_info">时长：{{item.shichang}}<image width="20" height="20" src='../../image/bf.png'></image>{{item.click}}</view>
+  <view class="content_title_jiejian">{{item.content}}</view>
+</navigator>
+

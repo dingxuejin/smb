@@ -1,0 +1,12 @@
+<!--pages/mypay/mypay.wxml-->
+<view class='page'>
+  <navigator url='../payvideo/payvideo' class='body_item'  id='myVideo'>
+    <text>已购视频</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </navigator>
+  <navigator url='../payaudio/payaudio' class='body_item'  id='myVideo'>
+    <text>已购音频</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </navigator>
+ 
+</view>

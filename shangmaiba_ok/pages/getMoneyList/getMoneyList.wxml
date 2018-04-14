@@ -1,0 +1,9 @@
+<!--pages/addMoneyList/getMoneyList.wxml-->
+<scroll-view class='page' scroll-y>
+  <view class='item' wx:for='{{withdrawalsList}}' data-id='{{item}}'>
+    <text class='money'>￥{{item.money}}</text>
+    <text class='account'>提现微信号：{{item.wechat}}</text>
+    <text class='time'>{{item.add_time}}</text>
+    <text class='type' style='color:{{colorList[item.type]}};'>{{item.state}}</text>
+  </view>
+</scroll-view>

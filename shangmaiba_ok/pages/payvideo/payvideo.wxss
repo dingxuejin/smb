@@ -1,0 +1,196 @@
+/**index.wxss**/
+.title{
+  width: 100%;
+  margin: 5px auto;
+  font-size: 12pt;
+  height:60rpx;
+  line-height: 60rpx;
+  text-align: center
+}
+.title image{
+  width: 20px;
+  height:20px;
+ 
+}
+.content{
+  width: 100%;
+  
+}
+.content_pic{
+  width: 100%;
+  position:relative;
+}
+
+.content_pic_cover{
+  width: 100%;
+  height: 400rpx;
+}
+.bb{
+  position:absolute; 
+  top:50%;
+  left:50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px; 
+  margin-top: -25px; 
+  z-index: 9999;
+}
+.content_title{
+  width: 95%;
+  margin:0px auto; 
+  display: flex;
+  flex-direction: row;
+  height:90rpx;
+  line-height: 90rpx;
+  overflow: hidden;
+  border-bottom: 1px #eeeeee solid
+}
+
+.content_title_left{
+  width: 70%;
+  font-size: 14pt;
+}
+.content_title_right{
+  width: 30%;
+ text-align: right;
+  font-size: 10pt;
+}
+.content_title_right image{
+  width: 20px;
+  height:20px;
+ vertical-align: middle
+}
+.content_title_info{
+  width: 95%;
+  margin:5px auto; 
+  
+ 
+  height:40rpx;
+  overflow: hidden;
+  font-size: 10pt;
+}
+.content_title_info image{
+  width: 20px;
+  height:20px;
+ vertical-align: middle;
+ padding-left: 10px
+}
+
+.content_title_jiejian{
+  width: 95%;
+  margin:5px auto; 
+  color: #999999;
+  height:160rpx;
+  overflow: hidden;
+  font-size: 12pt;
+  padding-bottom: 30px;
+}
+
+/*  */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.slide-image {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+swiper {
+  height: 400rpx;
+}
+
+.body {
+  width: 100%;
+}
+
+.body_title {
+  width: 100%;
+  height: 60rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.body_title_content {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: inline-block;
+}
+
+.body_title_select {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: inline-block;
+  font-size: 14px;
+  position: absolute;
+  right: 20rpx;
+}
+
+.body_list {
+  width: calc(100% - 20rpx);
+  display: flex;
+  padding: 20rpx 10rpx;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.body_list_item {
+  width: 33.3%;
+  height: 370rpx;
+  padding-bottom: 10rpx;
+}
+
+.body_list_item_img {
+  width: 225rpx;
+  margin: 0 10rpx;
+  height: 280rpx;
+  position: absolute;
+  background: #efefef;
+  border-radius: 3px;
+}
+
+/* .body_list_item image {
+  width: 225rpx;
+} */
+
+.body_list_item text {
+  width: 235rpx;
+  display: inline-block;
+  height: 50rpx;
+  position: absolute;
+  margin-top: 280rpx;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50rpx;
+}

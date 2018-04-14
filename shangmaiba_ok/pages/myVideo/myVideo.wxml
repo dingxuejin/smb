@@ -1,0 +1,17 @@
+<!--pages/audio/audio.wxml-->
+<view class='page'>
+  <navigator url='../videoInfo/videoInfo?id={{item.id}}' wx:for="{{list}}" class='page_item'>
+    <image class='page_item_cover' src='{{item.title_pic}}'></image>
+    <text class='page_item_title'>{{item.title}}</text>
+    <text class='page_item_author'>{{item.state1}}</text>
+    <text class='page_item_date'>{{item.pay_time}}</text>
+    <image class='page_item_view_img' src='../../image/ggg.png'></image>
+    <image class='page_item_time_img' src='../../image/ic_time.png'></image>
+    <!-- <image class='page_item_price_img' src='img/ic_price.png'></image>  -->
+    <text class='page_item_view'>{{item.click}}</text>
+    <text class='page_item_time'>{{item.shichang}}</text>
+    <!-- <text class='page_item_price'>12</text> -->
+  </navigator>
+
+
+</view>

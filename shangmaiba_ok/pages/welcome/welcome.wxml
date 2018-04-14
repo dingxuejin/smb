@@ -1,0 +1,6 @@
+<!--welcome.wxml-->
+<view class="page">
+   <image class="bg" src="../../image/bg_welcome.png"></image> 
+  <text class='title'>上麦吧</text>
+  <text class='msg'>{{msg}}</text>
+</view>

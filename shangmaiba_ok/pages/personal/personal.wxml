@@ -1,0 +1,41 @@
+<!--pages/personal/personal.wxml-->
+<view class='page'>
+  <view class='page_top'>
+    <image class='page_top_bg' src='../../image/bg_head.png'></image>
+    <view wx:if="{{userInfo.head_img!=null||''}}" class='page_head_bg'>
+      <image src='{{userInfo.head_img}}'></image>
+    </view>
+    <view wx:else="{{userInfo.head_img!=null||''}}" class='page_head_bg'>
+      <image src='../../image/tou.jpg'></image>
+    </view>
+    <text>{{userInfo.nickname}}</text>
+  </view>
+  <view id='personInfo' class='page_item' bindtap='goTo'>
+    <text>同步微信资料</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+  <!-- <view id='identify' class='page_item' bindtap='goTo'>
+    <text>实名认证</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view> -->
+  <view id='packet' class='page_item' bindtap='goTo'>
+    <text>钱包</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+  <view id='myRelease' class='page_item' bindtap='goTo'>
+    <text>我的发布</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+  <view id='histroy' class='page_item' bindtap='goTo'>
+    <text>购买记录</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+  <view id='feedback' class='page_item' bindtap='goTo'>
+    <text>问题与反馈</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+  <!-- <view id='exit' class='page_item' bindtap='goTo'>
+    <text>退出登录</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view> -->
+</view>

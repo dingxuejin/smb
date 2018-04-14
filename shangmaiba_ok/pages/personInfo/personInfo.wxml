@@ -1,0 +1,48 @@
+<!--pages/personal/personal.wxml-->
+<view class='page'>
+  <view class='page_item'>
+    <text>头像</text>
+    <image src='{{userInfo.imgUrl}}' bindtap='headChange'></image>
+  </view>
+  <view class='page_item'>
+    <text>昵称</text>
+    <text style='right:20rpx;font-size:14px;' bindtap='nicknameChang'>{{userInfo.nickName}}</text>
+  </view>
+  <view class='page_item'>
+    <text>性别</text>
+    <!-- <text style='right:20rpx;font-size:14px;'>{{userInfo.sex}}</text> -->
+    <picker bindchange="sexChange" value="{{userInfo.sex}}" range="{{sexList}}">
+      <view class="picker">
+        {{sexList[userInfo.sex]}}
+      </view>
+    </picker>
+  </view>
+  <view class='page_item'>
+    <text>出生日期</text>
+    <!-- <text style='right:20rpx;font-size:14px;'>{{userInfo.birthday}}</text> -->
+    <picker mode="date" value="{{userInfo.birthday}}" start="1970-01-01" end="2500-12-31" bindchange="bindDateChange">
+      <view class="picker">
+        {{userInfo.birthday}}
+      </view>
+    </picker>
+  </view>
+  <view class='page_item'>
+    <text>所在城市</text>
+    <!-- <text style='right:20rpx;font-size:14px;'>{{userInfo.city}}</text> -->
+    <picker mode="region" bindchange="bindRegionChange" value="{{userInfo.city}}">
+      <view class="picker">
+        {{userInfo.city[0]}}，{{userInfo.city[1]}}，{{userInfo.city[2]}}
+      </view>
+    </picker>
+  </view>
+  <view class='page_item'>
+    <text>手机号码</text>
+    <text style='right:20rpx;font-size:14px;'>{{userInfo.phone}}</text>
+  </view>
+  <button class='btn_save' bindtap='doUserUpdate'>保存</button>
+</view>
+
+
+<modal hidden="{{nicknameOutHide}}" title="昵称" confirm-text="提交" cancel-text="取消" bindcancel="nicknameOutCancel" bindconfirm="nicknameOutConfirm">
+  <input type='text' value='{{userInfo.nickName}}' placeholder="请输入内容" auto-focus='true' bindinput='inputListener' />
+</modal>

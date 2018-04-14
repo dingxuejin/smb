@@ -1,0 +1,9 @@
+<!--pages/login/login.wxml-->
+<view class='page'>
+  <image class='page_bg' src='../../image/bg_welcome.png'></image>
+  <text class='page_title'>上麦吧</text>
+  <button class='page_btn' style='bottom:480rpx;' bindtap='goToLogin'>登陆</button>
+  <button class='page_btn' style='bottom:360rpx;' bindtap='goToRegister'>注册</button>
+  <text class='page_text'>第三方登陆</text>
+  <image class='page_third_login' src='../../image/ic_wechat.png' bindtap='goToThirdLogin'></image>
+</view>

@@ -1,0 +1,34 @@
+@import '../../weui.wxss';
+
+/* pages/userinfo/userinfo.wxss */
+
+page{
+  background-color: white;
+  
+}
+.weui-cell11 {
+padding: 10px 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.befor{
+
+ 
+  background-color:white;
+  height: 70rpx;
+  font-size: 11pt;
+  line-height:28pt;
+}
+.after{
+
+ 
+  background-color:#eeeeee;
+  height: 70rpx;
+  font-size: 11pt;
+  line-height:28pt;
+}

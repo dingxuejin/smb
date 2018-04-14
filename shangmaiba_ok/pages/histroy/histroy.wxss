@@ -1,0 +1,72 @@
+/* pages/histroy/histroy.wxss */
+
+.page {
+  width: 100%;
+}
+
+.page_item {
+  width: calc(100% - 40rpx);
+  height: 150rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.item_img {
+  width: 180rpx;
+  height: 150rpx;
+  position: absolute;
+}
+
+.item_title {
+  position: absolute;
+  height: 40rpx;
+  left: 220rpx;
+  color: #646464;
+  margin-top: 20rpx;
+  font-size: 15px;
+  line-height: 40rpx;
+}
+
+.item_content {
+  position: absolute;
+  height: 40rpx;
+  left: 220rpx;
+  margin-top: 100rpx;
+  color: #c4c4c4;
+  font-size: 14px;
+  line-height: 40rpx;
+}
+
+.item_next {
+  height: 90rpx;
+  position: absolute;
+  right: 20rpx;
+  margin-top: 30rpx;
+  width: 120rpx;
+}
+
+.item_next_img {
+  width: 100%;
+  height: 50rpx;
+}
+
+.item_next_img image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 calc(50% - 25rpx);
+}
+
+.item_next_text {
+  height: 40rpx;
+  width: 100%;
+}
+
+.item_next_text  text {
+  height: 40rpx;
+  color: #c4c4c4;
+  display: inline-block;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  line-height: 40rpx;
+}

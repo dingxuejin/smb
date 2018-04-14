@@ -1,0 +1,186 @@
+/* pages/packet/packet.wxss */
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #efefef;
+}
+
+.page_top {
+  width: 100%;
+  margin-top: 10rpx;
+  background: #fff;
+  border-bottom: 1px solid #efefef;
+  height: 400rpx;
+}
+
+.page_top  text {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  height: 80rpx;
+  font-size: 30px;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 120rpx;
+}
+
+.page_top  button {
+  height: 100rpx;
+  width: 200rpx;
+  color: white;
+  background: #f9895b;
+  position: absolute;
+  line-height: 100rpx;
+  margin: 240rpx 0 0 calc(50% - 250rpx);
+}
+
+.page_item {
+  width: calc(100% - 40rpx);
+  height: 120rpx;
+  background: #fff;
+  padding: 0 20rpx;
+  border-bottom: 1px solid #efefef;
+}
+
+.page_item text {
+  width: 100%;
+  height: 100%;
+  line-height: 120rpx;
+  font-size: 15px;
+  color: #646464;
+}
+
+.page_item_content {
+  position: absolute;
+  text-align: right;
+  right: 20rpx;
+}
+
+.page_item image {
+  height: 40rpx;
+  width: 20rpx;
+  position: absolute;
+  right: 20rpx;
+  margin-top: 40rpx;
+}
+
+/*mask*/
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+/*content*/
+
+.drawer_box {
+  width: 650rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin: -150px 50rpx 0 50rpx;
+  border-radius: 3px;
+}
+
+.drawer_title {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.drawer_content {
+  height: 110px;
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+
+.btn_ok {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-top: 1px solid #e8e8ea;
+  color: #3cc51f;
+}
+
+.top {
+  padding-top: 8px;
+}
+
+.bottom {
+  padding-bottom: 8px;
+}
+
+.title {
+  height: 30px;
+  line-height: 30px;
+  width: 160rpx;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.input_base {
+  border: 2rpx solid #ccc;
+  padding-left: 10rpx;
+  margin-right: 50rpx;
+}
+
+.input_h30 {
+  height: 30px;
+  line-height: 30px;
+}
+
+.input_h60 {
+  height: 60px;
+}
+
+.input_view {
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+  line-height: 30px;
+}
+
+input {
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+}
+
+radio {
+  margin-right: 20px;
+}
+
+.grid {
+  display: -webkit-box;
+  display: box;
+}
+
+.col-0 {
+  -webkit-box-flex: 0;
+  box-flex: 0;
+}
+
+.col-1 {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}

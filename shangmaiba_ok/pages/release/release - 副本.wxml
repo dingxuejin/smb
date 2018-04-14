@@ -1,0 +1,92 @@
+<!--pages/release/release.wxml-->
+<scroll-view class='page_out' scroll-y='true' >
+  <view class='page'>
+    <view class='page_top'>
+      <image src='{{cover}}' bindtap='coverChange'></image>
+      <!-- <button>编辑封面</button> -->
+    </view>
+    <view class='info' style='display:none;'>
+      <view class='video' hidden='{{videoShow}}'>
+        <video src='{{path}}'></video>
+      </view>
+      <view class='audio' hidden='{{audioShow}}'>
+        <audio src='{{path}}' controls='true' poster="{{cover}}" name="{{title}}" author="{{authorname}}"></audio>
+      </view>
+    </view>
+    <view class='page_item'>
+      <text class='page_item_title'><text>*</text>标题：</text>
+      <input class='page_item_input' type='text' bindinput='inputChange' id='title'></input>
+    </view>
+    <view class='page_item'>
+      <text class='page_item_title'>类型：</text>
+      <picker bindchange="bindPicker1Change" value="{{Type1Index}}" range="{{Type1}}">
+        <view class="picker">
+          {{Type1[Type1Index]}}
+        </view>
+      </picker>
+    </view>
+    <view class='page_item'>
+      <text class='page_item_title'>分类：</text>
+      <picker bindchange="bindPicker2Change" value="{{Type2Index}}" range="{{Type2}}">
+        <view class="picker">
+          {{Type2[Type2Index]}}
+        </view>
+      </picker>
+    </view>
+    <view class='page_item'>
+      <text class='page_item_title'>观看扣费￥：</text>
+      <input class='page_item_input' type='text' bindinput='inputChange' id='price'></input>
+    </view>
+    <view class='page_item'>
+      <text class='page_item_title'>分享提成￥：</text>
+      <input class='page_item_input' type='text' bindinput='inputChange' id='rebatePrice'></input>
+    </view>
+    <view class='page_item'>
+      <text class='page_item_title'>描述：</text>
+      <input class='page_item_input' type='text' bindinput='inputChange' id='content' maxlength='-1'></input>
+    </view>
+    <view class='page_item' style='height:180rpx;display:none;'>
+      <text class='page_item_title'>介绍：</text>
+      <textarea placeholder='来简单介绍一下这个{{Type1[Type1Index]}}吧' maxlength='-1' bindinput='inputChange' id='introduce'></textarea>
+    </view>
+    <view class='page_item' hidden='{{uploadortext}}'>
+      <text class='page_item_title'>上传内容：</text>
+      <picker bindchange="bindPicker3Change" value="{{Type3Index}}" range="{{Type3}}">
+        <view class="picker">
+          {{Type3[Type3Index]}}
+        </view>
+      </picker>
+    </view>
+    <view class='page_item' style='height:800rpx;' hidden='{{audioTextShow}}'>
+      <text class='page_item_title'>文字内容：</text>
+      <textarea style='height:800rpx;' maxlength='-1' bindinput='inputChange' id='introduce'></textarea>
+    </view>
+    <view class='page_item' hidden='{{audioUploadShow}}' bindtap='urlChange'>
+      <text class='page_item_title'>{{Type1[Type1Index]}}选择：</text>
+      <image src='../../image/ic_arrow_right.png'></image>
+      <text class='page_item_content'>选择本地{{Type1[Type1Index]}}</text>
+    </view>
+    <view class='page_paper'>
+      <checkbox-group bindchange="paperChange">
+        <checkbox checked="{{paperCheck}}" value='{{paperCheck}}'></checkbox>
+      </checkbox-group>
+      <text class='page_paper_content'>我已阅读并接受<text style='color:#dd5656;'>上传协议</text></text>
+    </view>
+  </view>
+  <view class='commit_btn'>
+    <button bindtap='doRelease'>发布</button>
+  </view>
+</scroll-view>
+
+<cover-view class='dialog_bg' hidden='{{dialogIsHidden}}'>
+  <cover-view class='dialog'>
+    <cover-view class='dialog_title'>录音</cover-view>
+    <cover-view class='dialog_audio_in'>
+      <cover-image src='{{record[recordType]}}' bindtap='recordStart'></cover-image>
+    </cover-view>
+    <cover-view class='dialog_close'>
+      <cover-view class='dialog_close_btn' bindtap='hideDialogBg'>关闭
+      </cover-view>
+    </cover-view>
+  </cover-view>
+</cover-view>

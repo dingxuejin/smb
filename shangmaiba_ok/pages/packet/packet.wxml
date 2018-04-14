@@ -1,0 +1,63 @@
+ <!--pages/packet/packet.wxml-->
+<view class='page'>
+  <view class='page_top'>
+    <text style='margin-top:30rpx;font-size:16px;'>可提现金额</text>
+    <text>{{userinfo.money}}</text>
+     <button bindtap="powerDrawer2" data-statu="open">充值</button> 
+    <button style='margin: 240rpx 0 0 calc(50% + 50rpx);background:#1991eb' bindtap="powerDrawer" data-statu="open">提现</button>
+  </view>
+  <view class='page_item'>
+    <text>总收益</text>
+    <text class='page_item_content' style='width: 300rpx;height: 120rpx;'>{{userinfo.money_all}}</text>
+  </view>
+   <view class='page_item' bindtap='goTo' id='addMoneyList'>
+    <text>充值记录</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view> 
+  <view class='page_item' bindtap='goTo' id='inAndOffMoneyList'>
+    <text>收支记录</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+  <view class='page_item' bindtap='goTo' id='getMoneyList'>
+    <text>提现记录</text>
+    <image src='../../image/ic_arrow_right.png'></image>
+  </view>
+</view>
+
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+
+  <!--drawer content-->
+  <view class="drawer_title">申请提现</view>
+  <view class="drawer_content">
+    <view class="top grid">
+      <label class="title col-0">金额</label>
+      <input class="input_base input_h30 col-1" name="applyMoney" bindinput='inputChange' id='applyMoney'></input>
+    </view>
+    <view class="top grid">
+      <label class="title col-0">微信号</label>
+      <input class="input_base input_h30 col-1" name="applyAccount" bindinput='inputChange' id='applyAccount'></input>
+    </view>
+  </view>
+  <view class="btn_ok" bindtap="powerDrawer" data-statu="close" id='commit'>提交</view>
+</view>
+
+<!--mask-->
+<view class="drawer_screen" bindtap="powerDrawer2" data-statu="close" wx:if="{{showModalStatus2}}"></view>
+<!--content-->
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData2}}" class="drawer_box" wx:if="{{showModalStatus2}}">
+
+  <!--drawer content-->
+  <view class="drawer_title">充值</view>
+  <view class="drawer_content" style='height:55px;'>
+    <view class="top grid">
+      <label class="title col-0">金额</label>
+      <input class="input_base input_h30 col-1" name="applyMoney2" bindinput='inputChange2' id='applyMoney2'></input>
+    </view>
+  </view>
+  <view class="btn_ok" bindtap="powerDrawer2" data-statu="close" id='commit2'>提交</view>
+</view>
